@@ -194,7 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 133:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -244,7 +244,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 134:
+/***/ 115:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -328,7 +328,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 205:
+/***/ 204:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -347,19 +347,19 @@ module.exports = ".THEME_NAME.md-bottom-bar.md-fixed {\n  background-color: BACK
 
 
 /* styles */
-__webpack_require__(205)
+__webpack_require__(204)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(133),
+  __webpack_require__(114),
   /* template */
-  __webpack_require__(343),
+  __webpack_require__(340),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdBottomBar/mdBottomBar.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdBottomBar/mdBottomBar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdBottomBar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -370,9 +370,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-197179a8", Component.options)
+    hotAPI.createRecord("data-v-13562cb8", Component.options)
   } else {
-    hotAPI.reload("data-v-197179a8", Component.options)
+    hotAPI.reload("data-v-13562cb8", Component.options)
   }
 })()}
 
@@ -386,15 +386,15 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(134),
+  __webpack_require__(115),
   /* template */
-  __webpack_require__(345),
+  __webpack_require__(335),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdBottomBar/mdBottomBarItem.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdBottomBar/mdBottomBarItem.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdBottomBarItem.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -405,9 +405,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1b798f5b", Component.options)
+    hotAPI.createRecord("data-v-0e26bd52", Component.options)
   } else {
-    hotAPI.reload("data-v-1b798f5b", Component.options)
+    hotAPI.reload("data-v-0e26bd52", Component.options)
   }
 })()}
 
@@ -416,26 +416,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 343:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "md-bottom-bar",
-    class: [_vm.themeClass, _vm.classes]
-  }, [_vm._t("default")], 2)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-197179a8", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 345:
+/***/ 335:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -487,7 +468,26 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-1b798f5b", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-0e26bd52", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 340:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "md-bottom-bar",
+    class: [_vm.themeClass, _vm.classes]
+  }, [_vm._t("default")], 2)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-13562cb8", module.exports)
   }
 }
 
@@ -496,12 +496,12 @@ if (false) {
 /***/ 399:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(92);
+module.exports = __webpack_require__(73);
 
 
 /***/ }),
 
-/***/ 92:
+/***/ 73:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

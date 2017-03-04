@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 111:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSnackbar = __webpack_require__(309);
-
-var _mdSnackbar2 = _interopRequireDefault(_mdSnackbar);
-
-var _mdSnackbar3 = __webpack_require__(251);
-
-var _mdSnackbar4 = _interopRequireDefault(_mdSnackbar3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-snackbar', _mdSnackbar2.default);
-
-  Vue.material.styles.push(_mdSnackbar4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 124:
+/***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -253,7 +223,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 171:
+/***/ 152:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -263,11 +233,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _uniqueId = __webpack_require__(48);
+var _uniqueId = __webpack_require__(40);
 
 var _uniqueId2 = _interopRequireDefault(_uniqueId);
 
-var _transitionEndEventName = __webpack_require__(39);
+var _transitionEndEventName = __webpack_require__(37);
 
 var _transitionEndEventName2 = _interopRequireDefault(_transitionEndEventName);
 
@@ -275,7 +245,7 @@ var _mixin = __webpack_require__(1);
 
 var _mixin2 = _interopRequireDefault(_mixin);
 
-var _manager = __webpack_require__(124);
+var _manager = __webpack_require__(105);
 
 var _manager2 = _interopRequireDefault(_manager);
 
@@ -374,20 +344,18 @@ exports.default = {
       var _this = this;
 
       if (this.$refs.container) {
-        (function () {
-          var removeElement = function removeElement() {
-            _this.$refs.container.removeEventListener(_transitionEndEventName2.default, removeElement);
-            _this.removeElement();
-          };
-
-          _manager2.default.current = null;
-          _this.active = false;
-          _this.$emit('close');
+        var removeElement = function removeElement() {
           _this.$refs.container.removeEventListener(_transitionEndEventName2.default, removeElement);
-          _this.$refs.container.addEventListener(_transitionEndEventName2.default, removeElement);
-          window.clearTimeout(_this.closeTimeout);
-          _this.pendingDuration = _this.mdDuration;
-        })();
+          _this.removeElement();
+        };
+
+        _manager2.default.current = null;
+        this.active = false;
+        this.$emit('close');
+        this.$refs.container.removeEventListener(_transitionEndEventName2.default, removeElement);
+        this.$refs.container.addEventListener(_transitionEndEventName2.default, removeElement);
+        window.clearTimeout(this.closeTimeout);
+        this.pendingDuration = this.mdDuration;
       }
     },
     pauseTimeout: function pauseTimeout() {
@@ -419,7 +387,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 230:
+/***/ 203:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -438,19 +406,19 @@ module.exports = ".THEME_NAME .md-snackbar .md-ink-ripple, .THEME_NAME.md-snackb
 
 
 /* styles */
-__webpack_require__(230)
+__webpack_require__(203)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(171),
+  __webpack_require__(152),
   /* template */
-  __webpack_require__(390),
+  __webpack_require__(339),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdSnackbar/mdSnackbar.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdSnackbar/mdSnackbar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdSnackbar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -461,9 +429,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-b6cb8878", Component.options)
+    hotAPI.createRecord("data-v-12517ac0", Component.options)
   } else {
-    hotAPI.reload("data-v-b6cb8878", Component.options)
+    hotAPI.reload("data-v-12517ac0", Component.options)
   }
 })()}
 
@@ -472,7 +440,38 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 39:
+/***/ 339:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "md-snackbar",
+    class: [_vm.themeClass, _vm.classes],
+    attrs: {
+      "id": _vm.snackbarId
+    },
+    on: {
+      "mouseenter": _vm.pauseTimeout,
+      "mouseleave": _vm.resumeTimeout
+    }
+  }, [_c('div', {
+    ref: "container",
+    staticClass: "md-snackbar-container"
+  }, [_c('div', {
+    staticClass: "md-snackbar-content"
+  }, [_vm._t("default")], 2)])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-12517ac0", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -502,37 +501,6 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 390:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "md-snackbar",
-    class: [_vm.themeClass, _vm.classes],
-    attrs: {
-      "id": _vm.snackbarId
-    },
-    on: {
-      "mouseenter": _vm.pauseTimeout,
-      "mouseleave": _vm.resumeTimeout
-    }
-  }, [_c('div', {
-    ref: "container",
-    staticClass: "md-snackbar-container"
-  }, [_c('div', {
-    staticClass: "md-snackbar-content"
-  }, [_vm._t("default")], 2)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-b6cb8878", module.exports)
-  }
-}
-
-/***/ }),
-
 /***/ 395:
 /***/ (function(module, exports) {
 
@@ -540,15 +508,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_395__;
 
 /***/ }),
 
-/***/ 418:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(111);
-
-
-/***/ }),
-
-/***/ 48:
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -563,6 +523,44 @@ var uniqueId = function uniqueId() {
 
 exports.default = uniqueId;
 module.exports = exports["default"];
+
+/***/ }),
+
+/***/ 418:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(92);
+
+
+/***/ }),
+
+/***/ 92:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSnackbar = __webpack_require__(309);
+
+var _mdSnackbar2 = _interopRequireDefault(_mdSnackbar);
+
+var _mdSnackbar3 = __webpack_require__(251);
+
+var _mdSnackbar4 = _interopRequireDefault(_mdSnackbar3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-snackbar', _mdSnackbar2.default);
+
+  Vue.material.styles.push(_mdSnackbar4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

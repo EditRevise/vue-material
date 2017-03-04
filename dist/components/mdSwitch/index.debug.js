@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 115:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSwitch = __webpack_require__(313);
-
-var _mdSwitch2 = _interopRequireDefault(_mdSwitch);
-
-var _mdSwitch3 = __webpack_require__(255);
-
-var _mdSwitch4 = _interopRequireDefault(_mdSwitch3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-switch', _mdSwitch2.default);
-
-  Vue.material.styles.push(_mdSwitch4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 175:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -307,7 +277,7 @@ exports.default = {
     },
     changeState: function changeState(checked, $event) {
       if (typeof $event !== 'undefined') {
-        this.$emit('change', $event);
+        this.$emit('change', checked, $event);
 
         if (!$event.defaultPrevented) {
           this.checked = checked;
@@ -331,7 +301,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 224:
+/***/ 213:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -350,19 +320,19 @@ module.exports = ".THEME_NAME.md-switch.md-checked .md-switch-container {\n  bac
 
 
 /* styles */
-__webpack_require__(224)
+__webpack_require__(213)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(175),
+  __webpack_require__(156),
   /* template */
-  __webpack_require__(383),
+  __webpack_require__(358),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdSwitch/mdSwitch.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdSwitch/mdSwitch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdSwitch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -373,9 +343,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7c623fe4", Component.options)
+    hotAPI.createRecord("data-v-36af4640", Component.options)
   } else {
-    hotAPI.reload("data-v-7c623fe4", Component.options)
+    hotAPI.reload("data-v-36af4640", Component.options)
   }
 })()}
 
@@ -384,7 +354,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 383:
+/***/ 358:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -431,7 +401,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7c623fe4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-36af4640", module.exports)
   }
 }
 
@@ -440,8 +410,38 @@ if (false) {
 /***/ 422:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(115);
+module.exports = __webpack_require__(96);
 
+
+/***/ }),
+
+/***/ 96:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSwitch = __webpack_require__(313);
+
+var _mdSwitch2 = _interopRequireDefault(_mdSwitch);
+
+var _mdSwitch3 = __webpack_require__(255);
+
+var _mdSwitch4 = _interopRequireDefault(_mdSwitch3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-switch', _mdSwitch2.default);
+
+  Vue.material.styles.push(_mdSwitch4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

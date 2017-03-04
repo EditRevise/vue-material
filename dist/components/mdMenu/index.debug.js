@@ -132,47 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 106:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdMenu = __webpack_require__(301);
-
-var _mdMenu2 = _interopRequireDefault(_mdMenu);
-
-var _mdMenuItem = __webpack_require__(303);
-
-var _mdMenuItem2 = _interopRequireDefault(_mdMenuItem);
-
-var _mdMenuContent = __webpack_require__(302);
-
-var _mdMenuContent2 = _interopRequireDefault(_mdMenuContent);
-
-var _mdMenu3 = __webpack_require__(246);
-
-var _mdMenu4 = _interopRequireDefault(_mdMenu3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-menu', _mdMenu2.default);
-  Vue.component('md-menu-item', _mdMenuItem2.default);
-  Vue.component('md-menu-content', _mdMenuContent2.default);
-
-  Vue.material.styles.push(_mdMenu4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 12:
+/***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -202,7 +162,7 @@ module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 129:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -256,7 +216,7 @@ module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 163:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -266,11 +226,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _transitionEndEventName = __webpack_require__(39);
+var _transitionEndEventName = __webpack_require__(37);
 
 var _transitionEndEventName2 = _interopRequireDefault(_transitionEndEventName);
 
-var _getInViewPosition = __webpack_require__(129);
+var _getInViewPosition = __webpack_require__(110);
 
 var _getInViewPosition2 = _interopRequireDefault(_getInViewPosition);
 
@@ -482,7 +442,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 164:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -559,7 +519,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 165:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -569,7 +529,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getClosestVueParent = __webpack_require__(12);
+var _getClosestVueParent = __webpack_require__(11);
 
 var _getClosestVueParent2 = _interopRequireDefault(_getClosestVueParent);
 
@@ -694,7 +654,7 @@ if (!Element.prototype.scrollIntoViewIfNeeded) {
 
 /***/ }),
 
-/***/ 231:
+/***/ 212:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -713,19 +673,19 @@ module.exports = ".THEME_NAME.md-menu-content .md-list {\n  background-color: BA
 
 
 /* styles */
-__webpack_require__(231)
+__webpack_require__(212)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(163),
+  __webpack_require__(144),
   /* template */
-  __webpack_require__(391),
+  __webpack_require__(353),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdMenu/mdMenu.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdMenu/mdMenu.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdMenu.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -736,9 +696,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c2b6ddf8", Component.options)
+    hotAPI.createRecord("data-v-30cee800", Component.options)
   } else {
-    hotAPI.reload("data-v-c2b6ddf8", Component.options)
+    hotAPI.reload("data-v-30cee800", Component.options)
   }
 })()}
 
@@ -752,15 +712,15 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(164),
+  __webpack_require__(145),
   /* template */
-  __webpack_require__(384),
+  __webpack_require__(356),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdMenu/mdMenuContent.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdMenu/mdMenuContent.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdMenuContent.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -771,9 +731,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-863c0af6", Component.options)
+    hotAPI.createRecord("data-v-3408ec09", Component.options)
   } else {
-    hotAPI.reload("data-v-863c0af6", Component.options)
+    hotAPI.reload("data-v-3408ec09", Component.options)
   }
 })()}
 
@@ -787,15 +747,15 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(165),
+  __webpack_require__(146),
   /* template */
-  __webpack_require__(342),
+  __webpack_require__(394),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdMenu/mdMenuItem.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdMenu/mdMenuItem.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdMenuItem.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -806,9 +766,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-185998b7", Component.options)
+    hotAPI.createRecord("data-v-fec0949a", Component.options)
   } else {
-    hotAPI.reload("data-v-185998b7", Component.options)
+    hotAPI.reload("data-v-fec0949a", Component.options)
   }
 })()}
 
@@ -817,36 +777,31 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 342:
+/***/ 353:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('md-list-item', {
-    staticClass: "md-menu-item",
-    class: _vm.classes,
-    attrs: {
-      "href": _vm.href,
-      "target": _vm.target,
-      "disabled": _vm.disabled
-    },
-    nativeOn: {
-      "click": function($event) {
-        _vm.close($event)
-      }
+  return _c('div', {
+    staticClass: "md-menu"
+  }, [_vm._t("default"), _vm._v(" "), _c('md-backdrop', {
+    ref: "backdrop",
+    staticClass: "md-menu-backdrop md-transparent md-active",
+    on: {
+      "close": _vm.close
     }
-  }, [_vm._t("default")], 2)
+  })], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-185998b7", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-30cee800", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 384:
+/***/ 356:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -857,27 +812,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "keydown": [function($event) {
-        if (_vm._k($event.keyCode, "esc", 27)) { return; }
+        if (_vm._k($event.keyCode, "esc", 27)) { return null; }
         $event.preventDefault();
         _vm.close($event)
       }, function($event) {
-        if (_vm._k($event.keyCode, "tab", 9)) { return; }
+        if (_vm._k($event.keyCode, "tab", 9)) { return null; }
         $event.preventDefault();
         _vm.close($event)
       }, function($event) {
-        if (_vm._k($event.keyCode, "up", 38)) { return; }
+        if (_vm._k($event.keyCode, "up", 38)) { return null; }
         $event.preventDefault();
         _vm.highlightItem('up')
       }, function($event) {
-        if (_vm._k($event.keyCode, "down", 40)) { return; }
+        if (_vm._k($event.keyCode, "down", 40)) { return null; }
         $event.preventDefault();
         _vm.highlightItem('down')
       }, function($event) {
-        if (_vm._k($event.keyCode, "enter", 13)) { return; }
+        if (_vm._k($event.keyCode, "enter", 13)) { return null; }
         $event.preventDefault();
         _vm.fireClick($event)
       }, function($event) {
-        if (_vm._k($event.keyCode, "space", 32)) { return; }
+        if (_vm._k($event.keyCode, "space", 32)) { return null; }
         $event.preventDefault();
         _vm.fireClick($event)
       }]
@@ -888,13 +843,13 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-863c0af6", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-3408ec09", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 39:
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -924,25 +879,30 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 391:
+/***/ 394:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "md-menu"
-  }, [_vm._t("default"), _vm._v(" "), _c('md-backdrop', {
-    ref: "backdrop",
-    staticClass: "md-menu-backdrop md-transparent md-active",
-    on: {
-      "close": _vm.close
+  return _c('md-list-item', {
+    staticClass: "md-menu-item",
+    class: _vm.classes,
+    attrs: {
+      "href": _vm.href,
+      "target": _vm.target,
+      "disabled": _vm.disabled
+    },
+    nativeOn: {
+      "click": function($event) {
+        _vm.close($event)
+      }
     }
-  })], 2)
+  }, [_vm._t("default")], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c2b6ddf8", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-fec0949a", module.exports)
   }
 }
 
@@ -951,8 +911,48 @@ if (false) {
 /***/ 413:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(106);
+module.exports = __webpack_require__(87);
 
+
+/***/ }),
+
+/***/ 87:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdMenu = __webpack_require__(301);
+
+var _mdMenu2 = _interopRequireDefault(_mdMenu);
+
+var _mdMenuItem = __webpack_require__(303);
+
+var _mdMenuItem2 = _interopRequireDefault(_mdMenuItem);
+
+var _mdMenuContent = __webpack_require__(302);
+
+var _mdMenuContent2 = _interopRequireDefault(_mdMenuContent);
+
+var _mdMenu3 = __webpack_require__(246);
+
+var _mdMenu4 = _interopRequireDefault(_mdMenu3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-menu', _mdMenu2.default);
+  Vue.component('md-menu-item', _mdMenuItem2.default);
+  Vue.component('md-menu-content', _mdMenuContent2.default);
+
+  Vue.material.styles.push(_mdMenu4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 118:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdToolbar = __webpack_require__(324);
-
-var _mdToolbar2 = _interopRequireDefault(_mdToolbar);
-
-var _mdToolbar3 = __webpack_require__(258);
-
-var _mdToolbar4 = _interopRequireDefault(_mdToolbar3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-toolbar', _mdToolbar2.default);
-
-  Vue.material.styles.push(_mdToolbar4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 186:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -255,7 +225,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 213:
+/***/ 219:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -274,19 +244,19 @@ module.exports = ".THEME_NAME.md-toolbar {\n  background-color: PRIMARY-COLOR;\n
 
 
 /* styles */
-__webpack_require__(213)
+__webpack_require__(219)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(186),
+  __webpack_require__(167),
   /* template */
-  __webpack_require__(360),
+  __webpack_require__(370),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdToolbar/mdToolbar.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdToolbar/mdToolbar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdToolbar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -297,9 +267,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-44d8bce4", Component.options)
+    hotAPI.createRecord("data-v-4cc66f8a", Component.options)
   } else {
-    hotAPI.reload("data-v-44d8bce4", Component.options)
+    hotAPI.reload("data-v-4cc66f8a", Component.options)
   }
 })()}
 
@@ -308,7 +278,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 360:
+/***/ 370:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -321,7 +291,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-44d8bce4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-4cc66f8a", module.exports)
   }
 }
 
@@ -330,8 +300,38 @@ if (false) {
 /***/ 425:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(118);
+module.exports = __webpack_require__(99);
 
+
+/***/ }),
+
+/***/ 99:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdToolbar = __webpack_require__(324);
+
+var _mdToolbar2 = _interopRequireDefault(_mdToolbar);
+
+var _mdToolbar3 = __webpack_require__(258);
+
+var _mdToolbar4 = _interopRequireDefault(_mdToolbar3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-toolbar', _mdToolbar2.default);
+
+  Vue.material.styles.push(_mdToolbar4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

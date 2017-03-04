@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 110:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSidenav = __webpack_require__(308);
-
-var _mdSidenav2 = _interopRequireDefault(_mdSidenav);
-
-var _mdSidenav3 = __webpack_require__(250);
-
-var _mdSidenav4 = _interopRequireDefault(_mdSidenav3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-sidenav', _mdSidenav2.default);
-
-  Vue.material.styles.push(_mdSidenav4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 170:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -368,7 +338,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 218:
+/***/ 225:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -387,19 +357,19 @@ module.exports = ".THEME_NAME.md-sidenav .md-sidenav-content {\n  background-col
 
 
 /* styles */
-__webpack_require__(218)
+__webpack_require__(225)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(170),
+  __webpack_require__(151),
   /* template */
-  __webpack_require__(367),
+  __webpack_require__(383),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdSidenav/mdSidenav.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdSidenav/mdSidenav.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdSidenav.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -410,9 +380,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-52912130", Component.options)
+    hotAPI.createRecord("data-v-7c7821a8", Component.options)
   } else {
-    hotAPI.reload("data-v-52912130", Component.options)
+    hotAPI.reload("data-v-7c7821a8", Component.options)
   }
 })()}
 
@@ -421,7 +391,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 367:
+/***/ 383:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -433,7 +403,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "keyup": function($event) {
-        if (_vm._k($event.keyCode, "esc", 27)) { return; }
+        if (_vm._k($event.keyCode, "esc", 27)) { return null; }
         _vm.close($event)
       }
     }
@@ -451,7 +421,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-52912130", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-7c7821a8", module.exports)
   }
 }
 
@@ -460,8 +430,38 @@ if (false) {
 /***/ 417:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(110);
+module.exports = __webpack_require__(91);
 
+
+/***/ }),
+
+/***/ 91:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSidenav = __webpack_require__(308);
+
+var _mdSidenav2 = _interopRequireDefault(_mdSidenav);
+
+var _mdSidenav3 = __webpack_require__(250);
+
+var _mdSidenav4 = _interopRequireDefault(_mdSidenav3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-sidenav', _mdSidenav2.default);
+
+  Vue.material.styles.push(_mdSidenav4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

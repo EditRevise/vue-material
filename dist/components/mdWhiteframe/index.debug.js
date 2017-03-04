@@ -132,7 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 120:
+/***/ 101:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -156,7 +156,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 188:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -205,7 +205,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 214:
+/***/ 224:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -217,11 +217,11 @@ module.exports = exports['default'];
 
 
 /* styles */
-__webpack_require__(214)
+__webpack_require__(224)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(188),
+  __webpack_require__(169),
   /* template */
   null,
   /* scopeId */
@@ -229,7 +229,7 @@ var Component = __webpack_require__(0)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdWhiteframe/mdWhiteframe.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdWhiteframe/mdWhiteframe.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -239,9 +239,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-489a6ee4", Component.options)
+    hotAPI.createRecord("data-v-7a61cfe0", Component.options)
   } else {
-    hotAPI.reload("data-v-489a6ee4", Component.options)
+    hotAPI.reload("data-v-7a61cfe0", Component.options)
   }
 })()}
 
@@ -253,7 +253,7 @@ module.exports = Component.exports
 /***/ 427:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(120);
+module.exports = __webpack_require__(101);
 
 
 /***/ })

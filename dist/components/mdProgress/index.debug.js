@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 107:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdProgress = __webpack_require__(304);
-
-var _mdProgress2 = _interopRequireDefault(_mdProgress);
-
-var _mdProgress3 = __webpack_require__(247);
-
-var _mdProgress4 = _interopRequireDefault(_mdProgress3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-progress', _mdProgress2.default);
-
-  Vue.material.styles.push(_mdProgress4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 166:
+/***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -278,7 +248,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 209:
+/***/ 230:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -297,19 +267,19 @@ module.exports = ".THEME_NAME.md-progress {\n  background-color: PRIMARY-COLOR-0
 
 
 /* styles */
-__webpack_require__(209)
+__webpack_require__(230)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(166),
+  __webpack_require__(147),
   /* template */
-  __webpack_require__(350),
+  __webpack_require__(391),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdProgress/mdProgress.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdProgress/mdProgress.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdProgress.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -320,9 +290,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2816f2c4", Component.options)
+    hotAPI.createRecord("data-v-d4639c80", Component.options)
   } else {
-    hotAPI.reload("data-v-2816f2c4", Component.options)
+    hotAPI.reload("data-v-d4639c80", Component.options)
   }
 })()}
 
@@ -331,7 +301,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 350:
+/***/ 391:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -352,7 +322,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-2816f2c4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-d4639c80", module.exports)
   }
 }
 
@@ -361,8 +331,38 @@ if (false) {
 /***/ 414:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(107);
+module.exports = __webpack_require__(88);
 
+
+/***/ }),
+
+/***/ 88:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdProgress = __webpack_require__(304);
+
+var _mdProgress2 = _interopRequireDefault(_mdProgress);
+
+var _mdProgress3 = __webpack_require__(247);
+
+var _mdProgress4 = _interopRequireDefault(_mdProgress3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-progress', _mdProgress2.default);
+
+  Vue.material.styles.push(_mdProgress4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 113:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSpinner = __webpack_require__(311);
-
-var _mdSpinner2 = _interopRequireDefault(_mdSpinner);
-
-var _mdSpinner3 = __webpack_require__(253);
-
-var _mdSpinner4 = _interopRequireDefault(_mdSpinner3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-spinner', _mdSpinner2.default);
-
-  Vue.material.styles.push(_mdSpinner4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 173:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -302,7 +272,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 204:
+/***/ 222:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -321,19 +291,19 @@ module.exports = ".THEME_NAME.md-spinner .md-spinner-path {\n  stroke: PRIMARY-C
 
 
 /* styles */
-__webpack_require__(204)
+__webpack_require__(222)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(173),
+  __webpack_require__(154),
   /* template */
-  __webpack_require__(340),
+  __webpack_require__(377),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdSpinner/mdSpinner.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdSpinner/mdSpinner.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdSpinner.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -344,9 +314,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-15aaf96c", Component.options)
+    hotAPI.createRecord("data-v-645d5146", Component.options)
   } else {
-    hotAPI.reload("data-v-15aaf96c", Component.options)
+    hotAPI.reload("data-v-645d5146", Component.options)
   }
 })()}
 
@@ -355,40 +325,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 340:
+/***/ 377:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('transition', {
-    attrs: {
-      "name": "md-spinner",
-      "appear": ""
-    }
-  }, [_c('div', {
-    staticClass: "md-spinner",
-    class: [_vm.themeClass, _vm.classes],
-    style: (_vm.styles)
-  }, [_c('svg', {
-    staticClass: "md-spinner-draw",
-    attrs: {
-      "viewBox": "25 25 50 50"
-    }
-  }, [_c('circle', {
-    staticClass: "md-spinner-path",
-    attrs: {
-      "cx": "50",
-      "cy": "50",
-      "r": "20",
-      "stroke-width": _vm.mdStroke,
-      "stroke-dasharray": _vm.dashProgress
-    }
-  })])])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+module.exports={render:function(){},staticRenderFns:[]}
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-15aaf96c", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-645d5146", module.exports)
   }
 }
 
@@ -397,8 +341,38 @@ if (false) {
 /***/ 420:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(113);
+module.exports = __webpack_require__(94);
 
+
+/***/ }),
+
+/***/ 94:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSpinner = __webpack_require__(311);
+
+var _mdSpinner2 = _interopRequireDefault(_mdSpinner);
+
+var _mdSpinner3 = __webpack_require__(253);
+
+var _mdSpinner4 = _interopRequireDefault(_mdSpinner3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-spinner', _mdSpinner2.default);
+
+  Vue.material.styles.push(_mdSpinner4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

@@ -194,37 +194,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 108:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdRadio = __webpack_require__(305);
-
-var _mdRadio2 = _interopRequireDefault(_mdRadio);
-
-var _mdRadio3 = __webpack_require__(248);
-
-var _mdRadio4 = _interopRequireDefault(_mdRadio3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-radio', _mdRadio2.default);
-
-  Vue.material.styles.push(_mdRadio4.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 167:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -255,7 +225,7 @@ exports.default = {
   computed: {
     classes: function classes() {
       return {
-        'md-checked': typeof this.value !== 'undefined' && this.mdValue.toString() === this.value.toString(),
+        'md-checked': typeof this.value !== 'undefined' && this.value !== null && this.mdValue.toString() === this.value.toString(),
         'md-disabled': this.disabled
       };
     }
@@ -288,7 +258,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 201:
+/***/ 216:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -307,19 +277,19 @@ module.exports = ".THEME_NAME.md-radio .md-radio-container:after {\n  background
 
 
 /* styles */
-__webpack_require__(201)
+__webpack_require__(216)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(167),
+  __webpack_require__(148),
   /* template */
-  __webpack_require__(332),
+  __webpack_require__(362),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdRadio/mdRadio.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdRadio/mdRadio.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mdRadio.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -330,9 +300,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-079386ce", Component.options)
+    hotAPI.createRecord("data-v-39169a6c", Component.options)
   } else {
-    hotAPI.reload("data-v-079386ce", Component.options)
+    hotAPI.reload("data-v-39169a6c", Component.options)
   }
 })()}
 
@@ -341,7 +311,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 332:
+/***/ 362:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -378,7 +348,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-079386ce", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-39169a6c", module.exports)
   }
 }
 
@@ -387,8 +357,38 @@ if (false) {
 /***/ 415:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(108);
+module.exports = __webpack_require__(89);
 
+
+/***/ }),
+
+/***/ 89:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdRadio = __webpack_require__(305);
+
+var _mdRadio2 = _interopRequireDefault(_mdRadio);
+
+var _mdRadio3 = __webpack_require__(248);
+
+var _mdRadio4 = _interopRequireDefault(_mdRadio3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-radio', _mdRadio2.default);
+
+  Vue.material.styles.push(_mdRadio4.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 

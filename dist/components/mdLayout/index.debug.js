@@ -132,31 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 104:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdLayout = __webpack_require__(293);
-
-var _mdLayout2 = _interopRequireDefault(_mdLayout);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-layout', _mdLayout2.default);
-}
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 156:
+/***/ 137:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -308,7 +284,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 227:
+/***/ 205:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -320,11 +296,11 @@ module.exports = exports['default'];
 
 
 /* styles */
-__webpack_require__(227)
+__webpack_require__(205)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(156),
+  __webpack_require__(137),
   /* template */
   null,
   /* scopeId */
@@ -332,7 +308,7 @@ var Component = __webpack_require__(0)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/mrufino/Projects/personal/github/vue-material/src/components/mdLayout/mdLayout.vue"
+Component.options.__file = "/Users/jordan/Documents/Actual_Docs/Prompt_Dev/MaterialLib/src/components/mdLayout/mdLayout.vue"
 if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -342,9 +318,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-a85016b8", Component.options)
+    hotAPI.createRecord("data-v-141e11a0", Component.options)
   } else {
-    hotAPI.reload("data-v-a85016b8", Component.options)
+    hotAPI.reload("data-v-141e11a0", Component.options)
   }
 })()}
 
@@ -356,8 +332,32 @@ module.exports = Component.exports
 /***/ 411:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(104);
+module.exports = __webpack_require__(85);
 
+
+/***/ }),
+
+/***/ 85:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdLayout = __webpack_require__(293);
+
+var _mdLayout2 = _interopRequireDefault(_mdLayout);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-layout', _mdLayout2.default);
+}
+module.exports = exports['default'];
 
 /***/ })
 
